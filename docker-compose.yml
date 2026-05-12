@@ -12,6 +12,8 @@ services:
     build: .
     ports:
       - "8066:80"
+    environment:
+      ROOT_PASSWORD: ${ROOT_PASSWORD}
     security_opt:
       - no-new-privileges:true
     depends_on:
